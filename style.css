@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  font-family: "Red Hat Display";
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 98%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1em;
+}
+
+.order-card {
+  width: 90%;
+  max-width: 452px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-image {
+  background-image: url("images/illustration-hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
+
+.content {
+  padding: 1em;
+  text-align: center;
+}
+
+.content h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.content p {
+  padding: 1em 0;
+  color: hsl(224, 23%, 55%);
+  font-size: 1rem;
+}
+
+.annualplan {
+  height: auto;
+  width: 90%;
+  max-width: 400px;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  gap: 4em;
+  align-items: center;
+}
+
+.plan h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.plan span {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9rem;
+}
+
+.annualplan p {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.annualplan img {
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  padding: 15px;
+  margin: 1em auto;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 5px 5px 4px 1px rgba(128, 128, 128, 0.25);
+  display: block;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 800;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 2em;
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 1.2rem;
+  }
+  .content p {
+    font-size: 0.9rem;
+  }
+  .annualplan {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+  }
+  .annualplan img {
+    width: 25px;
+    height: 25px;
+  }
+  .plan h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .plan span,
+  .annualplan p {
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
